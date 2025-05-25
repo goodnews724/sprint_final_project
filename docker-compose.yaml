@@ -1,0 +1,10 @@
+services:
+  jupyter:
+    image: jupyter/base-notebook
+    container_name: sprint_jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/work  # 전체 프로젝트 폴더를 work에 마운트
+    env_file:
+      - .env

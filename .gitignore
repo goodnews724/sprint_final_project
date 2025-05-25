@@ -172,3 +172,15 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# 폴더 전체 무시
+secrets/
+data/
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+
+# 환경 설정
+.env
+EOF

@@ -8,3 +8,5 @@ services:
       - .:/home/jovyan/work  # 전체 프로젝트 폴더를 work에 마운트
     env_file:
       - .env
+    environment:
+      - JUPYTER_TOKEN= # 토큰을 빈 문자열로 설정하여 인증 비활성화

@@ -9,3 +9,7 @@ services:
     env_file:
       - .env
     command: "start-notebook.sh --ServerApp.token=''"
+    deploy:
+      resources:
+        limits:
+          memory: 11g

@@ -13,6 +13,6 @@ services:
         limits:
           memory: ${MEMORY_LIMIT:-16g}  # 기본값 12GB
     command: >
-      sh -c "pip install -r /home/final_key/project/sprint_final_project/requirements.txt && 
+      sh -c "pip install -r /home/jovyan/work/requirements.txt && 
              start-notebook.sh --ServerApp.token=''"
              

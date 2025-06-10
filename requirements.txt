@@ -22,6 +22,21 @@ requests==2.31.0
 # 환경 설정
 python-dotenv==1.0.0
 
+# 네트워크 분석 (학교 간 연결 관계 분석용)
+networkx==3.2.1
+
+# 지도 시각화 (대안 옵션)
+folium==0.15.1
+
+# JSON 처리 강화 (내장 json으로도 충분하지만 고급 기능 필요시)
+ujson==5.8.0
+
+# 시간대 처리 (datetime 고급 기능)
+pytz==2023.3
+
+# 웹서버 (로컬 테스트용, Python 내장 http.server로도 가능)
+# flask==3.0.0
+
 # Jupyter 관련 (필요시 주석 해제)
 # jupyter==1.0.0
 # jupyterlab

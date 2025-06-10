@@ -23,6 +23,7 @@ requests==2.31.0
 # 환경 설정
 python-dotenv==1.0.0
 
+dask[dataframe]
 # Jupyter 관련 (필요시 주석 해제)
 # jupyter==1.0.0
 # jupyterlab

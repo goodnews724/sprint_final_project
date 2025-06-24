@@ -15,4 +15,19 @@ services:
     command: >
       sh -c "pip install -r /home/jovyan/work/requirements.txt && 
              start-notebook.sh --ServerApp.token=''"
+  
+  metabase:
+    image: metabase/metabase
+    container_name: sprint_metabase
+    ports:
+      - "3000:3000"  # Metabase 기본 포트
+    volumes:
+      - metabase-data:/metabase-data
+    deploy:
+      resources:
+        limits:
+          memory: 5g  # 필요 시 조정
+
+volumes:
+  metabase-data:
              
